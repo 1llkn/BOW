@@ -6,8 +6,7 @@ import sqlite3
 app = Flask(__name__)
 
 # เชื่อมต่อ Supabase
-DATABASE_URL = os.environ.get("DATABASE_URL", "postgresql://postgres.pdjzhwmrdixpgdehmstf:Pattaratop9686@aws-0-ap-northeast-1.pooler.supabase.com:6543/postgres")
-
+DATABASE_URL = "postgresql://postgres.pdjzhwmrdixpgdehmstf:Pattaratop9686@aws-0-ap-northeast-1.pooler.supabase.com:6543/postgres"
 def get_db():
     if DATABASE_URL:
         import psycopg2
