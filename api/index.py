@@ -6,7 +6,7 @@ import sqlite3
 app = Flask(__name__)
 
 # ใช้ URL ของ Supabase ที่คุณให้มาเป็นค่าเริ่มต้น
-DATABASE_URL = os.environ.get("DATABASE_URL", "postgresql://postgres:Pattaratop9686@db.pdjzhwmrdixpgdehmstf.supabase.co:5432/postgres")
+DATABASE_URL = os.environ.get("DATABASE_URL", "postgresql://postgres.pdjzhwmrdixpgdehmstf:[YOUR-PASSWORD]@aws-0-ap-northeast-1.pooler.supabase.com:6543/postgres")
 
 def get_db():
     if DATABASE_URL:
